@@ -1,70 +1,94 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Title
 
-## Available Scripts
+A brief description of what this project does and who it's for
 
-In the project directory, you can run:
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# React + OpenAI + Tailwind CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Este proyecto es una aplicación de React que utiliza la API de OpenAI y está estilizada con Tailwind CSS.
 
-### `npm test`
+## Requisitos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Node.js](https://nodejs.org/) (v14 o superior)
+- [npm](https://www.npmjs.com/) o [Yarn](https://yarnpkg.com/)
+- Una cuenta en [OpenAI](https://platform.openai.com/)
 
-### `npm run build`
+## Instalación
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Crear un nuevo proyecto con Create React App
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    npx create-react-app react-openai
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. Instar OpenAI
 
-### `npm run eject`
+    npm install --save openai
+    # or
+    yarn add openai
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Si prefieres, puedes modificar el archivo env.example en lugar de crear uno nuevo.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    REACT_APP_OPENAI_API_KEY=tu_clave_api_aqui
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 2. Instar Tailwind CSS
 
-## Learn More
+    npm install -D tailwindcss
+    npx tailwindcss init
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Agregue las rutas a todos los archivos de plantilla en su tailwind.config.jsarchivo.
+tailwind.config.js
+```
+    content: [
+        "./index.html",
+        "./src/**/*.{js,jsx,ts,tsx}"
+    ],
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Añade las directivas Tailwind a tu CSS
+Agregue las @tailwinddirectivas para cada una de las capas de Tailwind a su archivo CSS principal.
+src/index.css
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+Iniciar el proceso de compilación de Tailwind CLI
+Agregue su archivo CSS compilado <head> y comience a usar las clases de utilidad de Tailwind para darle estilo a su contenido.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Instalar Tailwind CSS
+Sigue los pasos en la documentación oficial de Tailwind CSS:
+[Documentation](https://tailwindcss.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Iniciar el servidor de desarrollo
+    npm start
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Deployment
 
-### `npm run build` fails to minify
+To deploy this project run
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+  npm run deploy
+```
+
+
+## Demo
+
+[Ver Demo](https://reat-openai-tailwindcss.vercel.app/) 
+
+## Used By
+
+Este proyecto es utilizado por cualquier persona y empresas amantes de las tecnólogias . 
+## Authors
+
+- [@Sthalin Rivera](https://github.com/SthalinRivera)
+
